@@ -87,7 +87,7 @@ MODEL BUILDING ENDS HERE
 """
 
 # initiate RMSprop optimizer
-opt = keras.optimizers.RMSprop(learning_rate=0.0001, decay=1e-6)
+opt = keras.optimizers.RMSprop(lr=0.0001, decay=1e-6)
 
 if os.path.exists(model_path):
     print("LOADING OLD MODEL")
