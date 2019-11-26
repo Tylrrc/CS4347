@@ -84,7 +84,7 @@ MODEL BUILDING ENDS HERE
 """
 
 # initiate RMSprop optimizer
-opt = keras.optimizers.RMSprop(lr=0.0001, decay=1e-6)
+opt = keras.optimizers.Nadam(learning_rate=0.00001, beta_1=0.9, beta_2=0.999)
 
 if os.path.exists(model_path):
     print("LOADING OLD MODEL")
