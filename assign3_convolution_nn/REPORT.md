@@ -64,6 +64,9 @@
                             - Yielded highest average accuracy.
                             - Average accuracy: 60%
                     - EPOCH
+                        - Increasing the number of epochs by a factor of 10 made a considerable improvement in the 
+                        average accuracy.
+                        - Average accuracy: 70%
                     - TRAIN SIZE
                     - TEST SIZE
                     - DATA DIMENSION HEIGHT X WIDTH

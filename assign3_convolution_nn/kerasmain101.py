@@ -12,7 +12,7 @@ tensorboard_callback = keras.callbacks.TensorBoard(log_dir='food101runs')
 
 batch_size = 10
 num_classes = 10
-epochs = 10
+epochs = 100
 data_augmentation = True
 save_dir = os.path.join(os.getcwd(), 'archive')
 model_name = 'kerasfood101.h5'
@@ -84,7 +84,7 @@ MODEL BUILDING ENDS HERE
 """
 
 # initiate RMSprop optimizer
-opt = keras.optimizers.Nadam(learning_rate=0.00001, beta_1=0.9, beta_2=0.999)
+opt = keras.optimizers.Nadam(lr=0.00001, beta_1=0.9, beta_2=0.999)
 
 if os.path.exists(model_path):
     print("LOADING OLD MODEL")
